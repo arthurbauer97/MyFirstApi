@@ -19,7 +19,7 @@ class DataController(
 
     @GetMapping("name")
     fun getName(): ResponseEntity<List<People>> {
-        return ResponseEntity(repository.returnPeople(), HttpStatus.OK)
+        return ResponseEntity(repository.findAll(), HttpStatus.OK)
     }
 
 

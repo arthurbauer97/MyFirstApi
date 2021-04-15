@@ -9,7 +9,7 @@ import javax.persistence.Id
 data class People(
         @Id
         @GeneratedValue(strategy = GenerationType.AUTO)
-        private var id : Long? = 0,
-        private var name : String? = "",
-        private var cpf : String? = ""
+        var id: Long? = 0,
+        var name: String? = "",
+        var cpf: String? = ""
 )
