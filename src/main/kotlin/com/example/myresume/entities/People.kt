@@ -1,4 +1,4 @@
-package com.example.myresume.model
+package com.example.myresume.entities
 
 import javax.persistence.Entity
 import javax.persistence.GeneratedValue
@@ -11,5 +11,7 @@ data class People(
         @GeneratedValue(strategy = GenerationType.AUTO)
         var id: Long? = 0,
         var name: String? = "",
-        var cpf: String? = ""
+        var imageUrl: String? = "",
+        var cpf: String? = "",
+        var password: String? = "",
 )
